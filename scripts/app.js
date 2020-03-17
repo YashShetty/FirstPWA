@@ -149,7 +149,7 @@ function renderForecast(card, data) {
  * @return {Object} The weather forecast, if the request fails, return null.
  */
 function getForecastFromNetwork(coords) {
-  return fetch(`/forecast/${coords}`)
+  return fetch(`/MIDIScript/forecast/${coords}`)
     .then(response => {
       return response.json();
     })
