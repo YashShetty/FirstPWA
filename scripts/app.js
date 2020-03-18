@@ -317,9 +317,10 @@ function updateData() {
       renderForecast(card, forecast);
     });
     // Get the forecast data from the network.
-    getForecastFromNetwork(location.geo).then(forecast => {
+    /*getForecastFromNetwork(location.geo).then(forecast => {
       renderForecast(card, forecast);
-    });
+    });*/
+    renderForecast(card,getForecastFromNetwork(location.geo));
   });
 }
 
