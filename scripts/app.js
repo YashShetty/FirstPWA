@@ -43,9 +43,10 @@ function addLocation() {
   const location = { label: label, geo: geo };
   // Create a new card & get the weather data from the server
   const card = getForecastCard(location);
-  getForecastFromNetwork(geo).then(forecast => {
+  /*getForecastFromNetwork(geo).then(forecast => {
     renderForecast(card, forecast);
-  });
+  });*/
+  renderForecast(card,getForecastFromNetwork(geo));
   // Save the updated list of selected cities.
   weatherApp.selectedLocations[geo] = location;
   saveLocationList(weatherApp.selectedLocations);
