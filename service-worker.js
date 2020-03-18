@@ -23,28 +23,28 @@ const DATA_CACHE_NAME = "data-cache-v1";
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-  "/MIDIScript",
-  "/MIDIScript/index.html",
-  "/MIDIScript/scripts/app.js",
-  "/MIDIScript/scripts/install.js",
-  "/MIDIScript/scripts/luxon-1.11.4.js",
-  "/MIDIScript/styles/inline.css",
-  "/MIDIScript/images/add.svg",
-  "/MIDIScript/images/clear-day.svg",
-  "/MIDIScript/images/clear-night.svg",
-  "/MIDIScript/images/cloudy.svg",
-  "/MIDIScript/images/fog.svg",
-  "/MIDIScript/images/hail.svg",
-  "/MIDIScript/images/install.svg",
-  "/MIDIScript/images/partly-cloudy-day.svg",
-  "/MIDIScript/images/partly-cloudy-night.svg",
-  "/MIDIScript/images/rain.svg",
-  "/MIDIScript/images/refresh.svg",
-  "/MIDIScript/images/sleet.svg",
-  "/MIDIScript/images/snow.svg",
-  "/MIDIScript/images/thunderstorm.svg",
-  "/MIDIScript/images/tornado.svg",
-  "/MIDIScript/images/wind.svg"
+  "/FirstPWA",
+  "/FirstPWA/index.html",
+  "/FirstPWA/scripts/app.js",
+  "/FirstPWA/scripts/install.js",
+  "/FirstPWA/scripts/luxon-1.11.4.js",
+  "/FirstPWA/styles/inline.css",
+  "/FirstPWA/images/add.svg",
+  "/FirstPWA/images/clear-day.svg",
+  "/FirstPWA/images/clear-night.svg",
+  "/FirstPWA/images/cloudy.svg",
+  "/FirstPWA/images/fog.svg",
+  "/FirstPWA/images/hail.svg",
+  "/FirstPWA/images/install.svg",
+  "/FirstPWA/images/partly-cloudy-day.svg",
+  "/FirstPWA/images/partly-cloudy-night.svg",
+  "/FirstPWA/images/rain.svg",
+  "/FirstPWA/images/refresh.svg",
+  "/FirstPWA/images/sleet.svg",
+  "/FirstPWA/images/snow.svg",
+  "/FirstPWA/images/thunderstorm.svg",
+  "/FirstPWA/images/tornado.svg",
+  "/FirstPWA/images/wind.svg"
 ];
 
 self.addEventListener("install", evt => {
@@ -79,7 +79,7 @@ self.addEventListener("activate", evt => {
   self.clients.claim();
 });
 
-self.addEventListener("fetch", evt => {
+/*self.addEventListener("fetch", evt => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
   // CODELAB: Add fetch event handler here.
   if (evt.request.url.includes("/MIDIScript/forecast/")) {
@@ -109,4 +109,4 @@ self.addEventListener("fetch", evt => {
       });
     })
   );
-});
+});*/
