@@ -315,9 +315,10 @@ function updateData() {
     const location = weatherApp.selectedLocations[key];
     const card = getForecastCard(location);
     // CODELAB: Add code to call getForecastFromCache
-    getForecastFromCache(location.geo).then(forecast => {
+    /*getForecastFromCache(location.geo).then(forecast => {
       renderForecast(card, forecast);
-    });
+    });*/
+    renderForecast(card,getForecastFromCache(location.geo));
     // Get the forecast data from the network.
     /*getForecastFromNetwork(location.geo).then(forecast => {
       renderForecast(card, forecast);
