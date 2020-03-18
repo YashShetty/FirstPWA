@@ -55,8 +55,10 @@ self.addEventListener("install", evt => {
       console.log("[ServiceWorker] Pre-caching offline page");
       return cache.addAll(FILES_TO_CACHE);
     },e => {
-      console.log("error:" + e);
-    });
+      console.log("errorA:" + e);
+    }).catch(e => {
+      console.log("errorB:" + e);
+    })
   );
 
   self.skipWaiting();
