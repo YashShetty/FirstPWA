@@ -83,7 +83,7 @@ self.addEventListener("activate", evt => {
   self.clients.claim();
 });
 
-/*self.addEventListener("fetch", evt => {
+self.addEventListener("fetch", evt => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
   // CODELAB: Add fetch event handler here.
   if (evt.request.url.includes("/MIDIScript/forecast/")) {
@@ -113,4 +113,4 @@ self.addEventListener("activate", evt => {
       });
     })
   );
-});*/
+});
